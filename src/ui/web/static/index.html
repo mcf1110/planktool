@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Planktool</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
+      integrity="sha256-vK3UTo/8wHbaUn+dTQD0X6dzidqc5l7gczvH+Bnowwk="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title is-1">
+            Planktool
+          </h1>
+          <h2 class="subtitle">
+            Send microscope images by clicking the button below.
+          </h2>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <form
+        class="container control box"
+        action="classify"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <fieldset>
+          <div class="columns is-centered">
+            <div class="field is-narrow column">
+              <label for="classifier" class="label is-centered"
+                >Choose a classifier</label
+              >
+              <div class="control">
+                <div class="select is-medium  is-primary">
+                  <select id="dropdown" name="classifier"> </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <p>&nbsp;</p>
+        <fieldset id="file-fieldset">
+          <div class="columns is-centered">
+            <div class="field is-narrow column">
+              <div class="file is-boxed is-large is-primary is-centered">
+                <label class="file-label">
+                  <input class="file-input" type="file" name="file" required />
+                  <span class="file-cta">
+                    <span class="file-icon">
+                      <i id="upload-icon" class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label">
+                      Choose image
+                    </span>
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+
+    <section class="section">
+      <progress class="progress is-small is-primary is-hidden" max="100"
+        >15%</progress
+      >
+      <div class="container has-text-centered">
+        <div class="box container is-hidden" id="classifier-result">
+          <h2 class="subtitle">Classification result:</h2>
+          <a
+            id="save-image"
+            class="button is-primary is-large is-centered"
+            style="margin-bottom: 1rem"
+            download="result.png"
+          >
+            <i class="fas fa-save"></i>&nbsp;Save classified image
+          </a>
+          <img
+            src=""
+            alt="Classification result"
+            style="display: block; margin: auto;"
+          />
+        </div>
+      </div>
+    </section>
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/static/index.js"></script>
+  </body>
+</html>

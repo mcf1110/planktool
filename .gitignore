@@ -1,0 +1,4 @@
+*.csv
+input_images/*
+*.pyc
+__pycache__
