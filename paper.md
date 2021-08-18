@@ -8,7 +8,7 @@ tags:
   - plankton 
   - microscopy-images
 authors:
-  - name: Matheus Campos Fernandes^[corresponding author: fernandes.matheus@ufabc.edu.br]
+  - name: Matheus Campos Fernandes^[corresponding author - fernandes.matheus@ufabc.edu.br]
     affiliation: 1
   - name: Thiago Ferreira Covões
     affiliation: 1
