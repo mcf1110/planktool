@@ -1,6 +1,7 @@
 # Planktool 
 
 [![paper.pdf](https://img.shields.io/badge/PDF-Read%20the%20paper-333?logo=adobeacrobatreader&labelColor=EC1C24)](paper.pdf)
+[![DOI](https://zenodo.org/badge/204047377.svg)](https://zenodo.org/badge/latestdoi/204047377)
 
 Planktool is an automatic plankton image classification software. Simply put, you feed it an image and it draws a rectangle on identified plankton, with its corresponding class.
 
