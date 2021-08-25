@@ -1,4 +1,6 @@
-# Planktool
+# Planktool 
+
+[![paper.pdf](https://img.shields.io/badge/PDF-Read%20the%20paper-333?logo=adobeacrobatreader&labelColor=EC1C24)](paper.pdf)
 
 Planktool is an automatic plankton image classification software. Simply put, you feed it an image and it draws a rectangle on identified plankton, with its corresponding class.
 
@@ -23,6 +25,15 @@ $ python planktool.py web
 ```
 
 The main difference is that the web interface can choose between different classifiers, while the GUI uses a Random Forest with Generic classes.
+
+### GUI
+
+![GUI](img/gui.jpg) 
+
+
+### Web interface
+
+![Web interface](img/web.png)
 
 ## Training classifiers
 
